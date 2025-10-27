@@ -1,0 +1,52 @@
+/* Modal styles for notifications */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  width: min(560px, 92vw);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.modal-body {
+  display: grid;
+  gap: 8px;
+}
+
+.notice-item {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.modal-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn.close {
+  background: transparent;
+  border: 1px solid #e5e7eb;
+}
+
+.container.dark .modal { background: #0b1022; border-color: #1f2937; color: #e5e7eb; }
+.container.dark .notice-item { background: #0f172a; border-color: #1f2937; }
+

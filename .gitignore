@@ -1,0 +1,32 @@
+# Root .gitignore for Django backend and Vite frontend
+
+# General
+.DS_Store
+.idea/
+.vscode/
+*.log
+.env
+
+# Python / Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+backend/db.sqlite3
+backend/.env
+backend/.venv/
+venv/
+env/
+.pytest_cache/
+staticfiles/
+media/
+
+# Node / Vite
+vite-project/node_modules/
+vite-project/dist/
+vite-project/.env
+vite-project/.eslintcache
+vite-project/.parcel-cache/
+
+# OS / Editor backups
+*~
+*.swp
